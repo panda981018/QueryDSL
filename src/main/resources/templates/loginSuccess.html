@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Success</title>
+</head>
+<body>
+<h1>로그인 성공!</h1>
+<hr>
+<p>
+  <span th:text="${userEmail}"></span>님 환영합니다.<br>
+  userId : <span th:text="${userId}"></span><br>
+  userEmail : <span th:text="${userEmail}"></span><br>
+  userPassword : <span th:text="${userPassword}"></span><br>
+  userCreateDate:<span th:text="${userCreateDate}"></span>
+</p>
+<a th:href="@{'/'}">메인으로 이동</a>
+</body>
+</html>
